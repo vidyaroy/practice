@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Bootstrap</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Bootstrap</title>
 </head>
 <body>
+<header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar-brand">
       <img src="images/inter.png" width="50px" height="50px">
@@ -23,7 +29,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,12 +53,241 @@
     </div>
   </nav>
 
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/table-0.jpg" alt="Los Angeles" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="images/table-1.jpg" alt="Chicago" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="images/table-2.jpg" alt="New York" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</header>
 
+<!-- About Us -->
+<section>
+  <div class="container-fluid">
+    <h1 class="text-center text-capitalize pt-5">about us</h1>
+    <hr class="w-25 mx-auto pb-5">
+    <div class="row mb-5">
+      <div class="col-lg-6 col-md-6 col-12">
+        <img src="images/saveimg.webp" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+        <h1>who am i?</h1>
+        <hr>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Quod corporis dolore unde ipsum voluptate aliquid natus quam sit.
+        Fuga debitis qui quos magnam consequatur fugiat iusto quisquam rerum reiciendis beatae praesentium soluta quas,
+        sint fugit obcaecati accusamus, ab minus veniam aut reprehenderit ad. Aliquid quibusdam expedita maxime tenetur sunt dignissimos!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eos iure totam maxime reiciendis eius iste modi nulla ad ut dignissimos
+        asperiores, suscipit labore, tempore inventore pariatur dolor. Explicabo voluptatibus debitis tenetur. Cupiditate corporis culpa obcaecati, 
+       earum reiciendis repudiandae quam eveniet aut quibusdam dolorem voluptas recusandae. Commodi odit error doloremque.
+      </p>
+      <button class="btn bg-primary text-white">Wanna Know Me</button>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Services -->
+<section>
+  <div class="container">
+    <h1 class="text-center text-capitalize pt-5">services</h1>
+    <hr class="w-25 mx-auto pb-5">
+    <div class="row text-center mb-5">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img class="card-img-top" src="images/ham.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img class="card-img-top" src="images/scroll-img.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img class="card-img-top" src="images/ham.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
+<!-- Contact Demo -->
+<section class="bg-primary">
+  <article class="py-5 text-center text-white">
+    <h3 class="display-4">+91 124567890</h3>
+    <p>If you want better service Call us now</p>
+    <button class="btn bg-warning">Contact Now</button>
+  </article>
+</section>
 
+<!-- Contact Us -->
+<section>
+  <div class="container">
+    <h1 class="text-center text-capitalize pt-5">gallery</h1>
+    <hr class="w-25 mx-auto pb-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/table-1.jpg" class="img-fluid">
+      </div>
+    </div>
+</section>
+
+<!-- Register Form -->
+<section class="bg-primary">
+  <article class="py-5">
+  <div class=" text-center text-white">
+    <h3 class="display-4">Want To Join</h3>
+    <p>If you want better service Call us now</p>
+    <button class="btn bg-warning" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Join Now</button>
+  </div>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Singup</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- Contact Us Form -->
+<section>
+  <div class="container mb-5">
+    <h1 class="text-center text-capitalize pt-5">Contact Us</h1>
+    <hr class="w-25 mx-auto pb-5">
+    <div class="w-50 mx-auto">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" placeholder="Enter email" id="name">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Email</label>
+          <input type="email" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Mobile No:</label>
+          <input type="number" class="form-control" placeholder="Enter Mob No" id="pwd">
+        </div>
+        <div class="form-group">
+          <label>Textarea</label>
+          <textarea class="form-control"></textarea>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p class="text-center bg-dark text-white">@copyright VidyaDemo.com 2021</p>
+</footer>
 
 
 
